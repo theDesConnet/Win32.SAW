@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{C13A378C-1BBA-4104-B73E-89AC5CA6344E}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="SAW.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="add-on\AntiKill\AntiKill.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="SAW">
+        <MSBuild Projects="SAW.dproj"/>
+    </Target>
+    <Target Name="SAW:Clean">
+        <MSBuild Projects="SAW.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SAW:Make">
+        <MSBuild Projects="SAW.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="AntiKill">
+        <MSBuild Projects="add-on\AntiKill\AntiKill.dproj"/>
+    </Target>
+    <Target Name="AntiKill:Clean">
+        <MSBuild Projects="add-on\AntiKill\AntiKill.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AntiKill:Make">
+        <MSBuild Projects="add-on\AntiKill\AntiKill.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="SAW;AntiKill"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="SAW:Clean;AntiKill:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="SAW:Make;AntiKill:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.332,C:\Users\Админ\Documents\Embarcadero\Studio\Projects\Unit5.pas=C:\Users\Админ\Documents\Embarcadero\Studio\Projects\Win32.SAW\Exe\end\Starting.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.451,=C:\Users\Админ\Documents\Embarcadero\Studio\Projects\Unit5.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.332,C:\Users\Админ\Documents\Embarcadero\Studio\Projects\Unit5.dfm=C:\Users\Админ\Documents\Embarcadero\Studio\Projects\Win32.SAW\Exe\end\Starting.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.771,C:\Users\Админ\Documents\Embarcadero\Studio\Projects\Project3.dproj=C:\Users\Админ\Documents\Embarcadero\Studio\Projects\Win32.SAW\Exe\end\SAWKill.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
