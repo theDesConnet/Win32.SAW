@@ -12,4 +12,5 @@
 
 # Поддержать автора
 QIWI: https://qiwi.com/n/desconnet
+
 DonationAlerts: https://www.donationalerts.com/r/desconnet
